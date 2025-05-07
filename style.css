@@ -42,12 +42,11 @@
   
   header img {
     /* Height is set inline, but you can control max-height here too */
-    max-height: 70px; /* Adjust as needed */
+    max-height: 100px; /* Adjust as needed */
     margin-right: auto; /* Pushes nav to the right if logo is after h1 */
   }
   
-  /* 3. Navigation Styling
-  --------------------------------------------- */
+  /* 3. Navigation Styling- */
   nav ul {
     list-style: none;
     display: flex; /* Arranges nav items in a row */
@@ -171,7 +170,7 @@
     color: #333;
   }
   
-  /* Style for buttons (like the volunteer button, download links) */
+  /* Style for buttons (like the volunteer button, download, links) */
   .volunteer-button,
   a[download], /* Style download links like buttons */
   input[type="submit"] /* If you add forms */ {
@@ -202,7 +201,7 @@
   /* 5. Footer Styling
   --------------------------------------------- */
   footer {
-    background-color: #333333; /* Dark grey for footer (keeps it neutral) */
+    background-color: #000000; /* Dark grey for footer (keeps it neutral) */
     color: #e0e0e0; /* Light text for footer */
     text-align: center;
     padding: 1.5rem;
@@ -278,4 +277,15 @@
       padding: 10px 18px;
       font-size: 0.95rem;
     }
+  }
+
+  .section-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .section-logo {
+    height: 32px;
+    width: auto;
   }

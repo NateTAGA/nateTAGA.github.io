@@ -282,10 +282,11 @@
   .section-heading {
     display: flex;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
+    justify-content: space-between;
   }
   
   .section-logo {
-    height: 32px;
+    height: 90px;
     width: auto;
   }

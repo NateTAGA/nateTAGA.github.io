@@ -13,8 +13,8 @@
   }
   
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A slightly more modern default font */
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
+    line-height: 1.7;
     color: #333333; /* Dark grey for text */
     background-color: #f8f8f8; /* Very light grey background */
     display: flex; /* Essential for sticky footer */
@@ -25,7 +25,7 @@
   /* 2. Header Styling- */
   header {
     background-color: #DC143C; /* Crimson Red */
-    color: #ffffff; /* White text */
+    color: #000000; /*  ORIGINALLY White text */
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -69,7 +69,7 @@
   
   nav ul li a:hover,
   nav ul li a.active { /* You might add an 'active' class with JS for current page */
-    background-color: #C4B454; /* Vegas Gold background on hover */
+    background-color: #a79a47; /* Vegas Gold background on hover */
     color: #DC143C; /* Crimson Red text on hover */
   }
   

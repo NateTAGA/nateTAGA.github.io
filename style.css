@@ -24,8 +24,8 @@
   
   /* 2. Header Styling- */
   header {
-    background-color: #DC143C; /* Crimson Red */
-    color: #000000; /*  ORIGINALLY White text */
+    background-color: #000000; /*  OG is Crimson Red */
+    color: #ffffff; /*White text */
     padding: 1rem 2rem;
     display: flex;
     align-items: center;

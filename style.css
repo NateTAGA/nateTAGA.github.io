@@ -1,0 +1,281 @@
+/* style.css - Segerstrom Football Boosters */
+
+/* 1. Basic Reset & Page Setup- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    height: 100%; /* Essential for sticky footer */
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A slightly more modern default font */
+    line-height: 1.6;
+    color: #333333; /* Dark grey for text */
+    background-color: #f8f8f8; /* Very light grey background */
+    display: flex; /* Essential for sticky footer */
+    flex-direction: column; /* Essential for sticky footer */
+    min-height: 100vh; /* Ensures body takes at least full viewport height */
+  }
+  
+  /* 2. Header Styling- */
+  header {
+    background-color: #DC143C; /* Crimson Red */
+    color: #ffffff; /* White text */
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Puts logo/title left, nav right */
+    flex-wrap: wrap; /* Allows nav to wrap on smaller screens */
+    border-bottom: 5px solid #C4B454; /* Vegas Gold accent border */
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    margin-right: 1rem; /* Space between title and logo/nav */
+    font-weight: bold;
+  }
+  
+  header img {
+    /* Height is set inline, but you can control max-height here too */
+    max-height: 70px; /* Adjust as needed */
+    margin-right: auto; /* Pushes nav to the right if logo is after h1 */
+  }
+  
+  /* 3. Navigation Styling
+  --------------------------------------------- */
+  nav ul {
+    list-style: none;
+    display: flex; /* Arranges nav items in a row */
+    flex-wrap: wrap; /* Allows items to wrap on small screens */
+  }
+  
+  nav ul li {
+    margin-left: 15px; /* Space between nav items */
+  }
+  
+  nav ul li a {
+    color: #ffffff; /* White text for nav links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 0.85rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active { /* You might add an 'active' class with JS for current page */
+    background-color: #C4B454; /* Vegas Gold background on hover */
+    color: #DC143C; /* Crimson Red text on hover */
+  }
+  
+  /* Specific style for the external Team Website link */
+  nav ul li a[target="_blank"] {
+    background-color: #C4B454; /* Vegas Gold */
+    color: #DC143C; /* Crimson Red text */
+  }
+  
+  nav ul li a[target="_blank"]:hover {
+    background-color: #a79a47; /* Darker Vegas Gold on hover */
+    color: #ffffff; /* White text on darker gold */
+  }
+  
+  
+  /* 4. Main Content Styling- */
+  main {
+    flex-grow: 1; /* Crucial: makes main content take available space, pushing footer down */
+    padding: 25px;
+    background-color: #ffffff; /* White background for content area */
+    max-width: 1000px; /* Max width for content, centered */
+    margin: 25px auto; /* Centers the content block and adds space top/bottom */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  main section {
+    margin-bottom: 35px;
+  }
+  
+  main section h2 {
+    color: #DC143C; /* Crimson Red for section titles */
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #C4B454; /* Vegas Gold accent under H2 */
+    font-size: 1.6rem;
+  }
+  
+  main section h3 {
+    color: #b81231; /* Darker shade of Crimson Red for H3 */
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+  }
+  
+  main p {
+    margin-bottom: 15px;
+  }
+  
+  main ul, main ol {
+    margin-left: 25px; /* Indent lists */
+    margin-bottom: 15px;
+  }
+  
+  main ul li, main ol li {
+    margin-bottom: 8px;
+  }
+  
+  main a {
+    color: #DC143C; /* Crimson Red for general links within content */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main a:hover {
+    text-decoration: underline;
+    color: #a10f2c; /* Darker Crimson Red on hover */
+  }
+  
+  main blockquote {
+    border-left: 5px solid #C4B454; /* Vegas Gold left border */
+    margin: 20px 0 20px 20px;
+    padding: 15px 20px;
+    background-color: #fdfcf4; /* Very light gold/beige background */
+    font-style: italic;
+    color: #555;
+  }
+  
+  main hr {
+    border: 0;
+    height: 1px;
+    background-color: #C4B454; /* Vegas Gold for horizontal rules */
+    margin: 30px 0;
+  }
+  
+  /* Specific styling for contact list on contact page */
+  .contact-list {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.8;
+  }
+  .contact-list li {
+    margin-bottom: 10px;
+  }
+  .contact-list strong {
+    display: inline-block;
+    min-width: 130px; /* Adjust as needed for alignment */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style for buttons (like the volunteer button, download links) */
+  .volunteer-button,
+  a[download], /* Style download links like buttons */
+  input[type="submit"] /* If you add forms */ {
+    background-color: #C4B454; /* Vegas Gold for call to action buttons */
+    color: #DC143C !important; /* Crimson Red text on buttons, important to override default link */
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none !important; /* Important to override default link underline */
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #a79a47; /* Darker gold border */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .volunteer-button:hover,
+  a[download]:hover,
+  input[type="submit"]:hover {
+    background-color: #a79a47; /* Darker Vegas Gold on hover */
+    color: #ffffff !important; /* White text on hover */
+    border-color: #8f833b;
+  }
+  
+  
+  /* 5. Footer Styling
+  --------------------------------------------- */
+  footer {
+    background-color: #333333; /* Dark grey for footer (keeps it neutral) */
+    color: #e0e0e0; /* Light text for footer */
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 5px solid #DC143C; /* Crimson Red top border for footer */
+  }
+  
+  footer p {
+    margin: 0; /* Remove default paragraph margin in footer */
+  }
+  
+  
+  /* 6. Responsive Adjustments
+  --------------------------------------------- */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column; /* Stack header items */
+      text-align: center;
+    }
+  
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+  
+    header img {
+      margin: 0.5rem auto; /* Center logo */
+      max-height: 60px;
+    }
+  
+    nav ul {
+      flex-direction: column; /* Stack nav items */
+      width: 100%;
+      align-items: center; /* Center nav items */
+    }
+  
+    nav ul li {
+      margin-left: 0;
+      margin-top: 10px;
+      width: 90%; /* Make nav items almost full width for easier tapping */
+      max-width: 300px; /* But not excessively wide */
+      text-align: center;
+    }
+  
+    nav ul li a {
+      display: block; /* Make the whole area clickable */
+    }
+  
+    main {
+      margin: 15px; /* Reduce margin on smaller screens */
+      padding: 20px;
+    }
+  
+    main section h2 {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+    main section h2 {
+      font-size: 1.3rem;
+    }
+    .contact-list strong {
+      display: block; /* Stack label and contact info on very small screens */
+      min-width: auto;
+      margin-bottom: 3px;
+    }
+  
+    .volunteer-button,
+    a[download],
+    input[type="submit"] {
+      padding: 10px 18px;
+      font-size: 0.95rem;
+    }
+  }

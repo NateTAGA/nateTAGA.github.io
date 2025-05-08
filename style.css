@@ -286,7 +286,45 @@
     justify-content: space-between;
   }
   
+  /* added social to footer */
   .section-logo {
     height: 90px;
     width: auto;
+  }
+
+.social-icons a {
+    color: #e0e0e0;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #C4B454; /* Vegas Gold on hover */
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-container p {
+    flex: 1;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .social-left, .social-right {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .social-left {
+    text-align: left;
+  }
+  
+  .social-right {
+    text-align: right;
   }

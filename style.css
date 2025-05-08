@@ -328,3 +328,9 @@
   .social-right {
     text-align: right;
   }
+
+  /* Ensures proper alignment and spacing for images in the footer */
+  .footer-container img {
+    vertical-align: middle;
+    margin: 0 10px;
+  }

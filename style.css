@@ -209,7 +209,7 @@
   }
   
   footer p {
-    margin: 0; /* Remove default paragraph margin in footer */
+    margin: 0; /* No margin for footer text */
   }
   
   
@@ -333,11 +333,10 @@
   .footer-container img {
     vertical-align: middle;
     margin: 0 10px;
-    transform: scale(0.7);
+    transform: scale(2.5); /* Adjusts size */
     transform-origin: center;
     margin-left: auto; /* Pushes logos to the end */
-    margin-right: 5px; /* Reduces space to bring logos closer to the margins */
+    margin-right: auto; /*  bring logos closer to the margins */
     max-height: 50px; /* Ensures logos don't exceed a specific height */
-    filter: grayscale(100%); /* Makes logos grayscale */
     transition: filter 0.3s ease; /* Smooth transition for hover effect */
   }

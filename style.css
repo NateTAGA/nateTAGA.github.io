@@ -333,6 +333,6 @@
   .footer-container img {
     vertical-align: middle;
     margin: 0 10px;
-    transform: scale(1.5);
+    transform: scale(1.05);
     transform-origin: center;
   }

@@ -154,6 +154,27 @@
     margin: 30px 0;
   }
   
+  /* Calendar Page Styling */
+#calendar {
+    text-align: center;
+  }
+  
+  #calendar h2 {
+    font-size: 2rem;
+    color: #C4B454;
+    margin-bottom: 20px;
+  }
+  
+  #calendar iframe {
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    border: 2px solid #C4B454;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+
   /* Specific styling for contact list on contact page */
   .contact-list {
     list-style: none;
@@ -165,7 +186,7 @@
   }
   .contact-list strong {
     display: inline-block;
-    min-width: 130px; /* Adjust as needed for alignment */
+    min-width: 130px; /* Adjust for alignment */
     font-weight: bold;
     color: #333;
   }
@@ -198,7 +219,7 @@
   }
   
   
-  /* 5. Footer Styling
+  /*  Footer Styling
   --------------------------------------------- */
   footer {
     background-color: #000000; /* Dark grey for footer (keeps it neutral) */
@@ -213,7 +234,7 @@
   }
   
   
-  /* 6. Responsive Adjustments
+  /*  Responsive Adjustments
   --------------------------------------------- */
   @media (max-width: 768px) {
     header {

@@ -23,34 +23,35 @@
   }
   
   /* 2. Header Styling- */
-  header {
+header {
     background-color: #000000; /*  OG is Crimson Red */
     color: #ffffff; /*White text */
     padding: 1rem 2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Puts logo/title left, nav right */
-    flex-wrap: wrap; /* Allows nav to wrap on smaller screens */
+    text-align: center;
     border-bottom: 5px solid #C4B454; /* Vegas Gold accent border */
   }
   
-  header h1 {
+header h1 {
     font-size: 1.8rem;
-    margin-right: 1rem; /* Space between title and logo/nav */
+    margin-bottom: 1rem;
     font-weight: bold;
   }
   
-  header img {
+header img {
     /* Height is set inline, but you can control max-height here too */
     max-height: 100px; /* Adjust as needed */
-    margin-right: auto; /* Pushes nav to the right if logo is after h1 */
+    margin-bottom: 1rem;
   }
   
   /* 3. Navigation Styling- */
-  nav ul {
+nav ul {
     list-style: none;
     display: flex; /* Arranges nav items in a row */
     flex-wrap: wrap; /* Allows items to wrap on small screens */
+    justify-content: center;
   }
   
   nav ul li {
@@ -243,6 +244,7 @@ body.calendar-page main {
   @media (max-width: 768px) {
     header {
       flex-direction: column; /* Stack header items */
+      align-items: center;
       text-align: center;
     }
   

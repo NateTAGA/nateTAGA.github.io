@@ -29,9 +29,9 @@ header {
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: left;
     border-bottom: 5px solid #C4B454; /* Vegas Gold accent border */
   }
   
